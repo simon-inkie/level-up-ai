@@ -1,0 +1,2 @@
+[tui]
+status_line = ["model-with-reasoning", "context-used", "context-remaining", "context-window-size"]
