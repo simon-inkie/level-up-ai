@@ -1,11 +1,3 @@
----
-name: review-levels
-description: >-
-  Brief, triage and stop independent code, spec and package reviews. Use before
-  launching a review and when its report returns. Choose standard or deep scope,
-  identify risk zones from the diff and cap follow-up passes at verification.
----
-
 # Review levels
 
 Block acceptance on defects that real users or normal operators can hit. Ticket other confirmed findings for hardening. Require tests for core features and for changes that put money or other high-impact operations at risk.

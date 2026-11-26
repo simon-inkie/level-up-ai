@@ -4,8 +4,7 @@ Skills that work with any coding agent. Each skill is one folder with a `SKILL.m
 
 | Skill | What it does |
 | --- | --- |
-| [`review-levels`](review-levels/SKILL.md) | Sets the scope for standard and deep reviews, identifies risk zones from the diff and caps follow-up passes at verification. |
-| [`judge`](judge/SKILL.md) | Independently triages findings and gives the briefer rules for accepting, fixing, rerouting, parking, escalating or halting the work. |
+| [`review`](review/SKILL.md) | The whole review method in one folder: [`levels.md`](review/levels.md) briefs the reviewer (scope, risk zones, capped passes), [`judge.md`](review/judge.md) triages the findings and decides what happens next. |
 
 ## Install
 
@@ -15,14 +14,14 @@ Run these from the repository root. Copy only the skills you want.
 
 ```bash
 mkdir -p ~/.claude/skills
-cp -R skills/{judge,review-levels} ~/.claude/skills/
+cp -R skills/review ~/.claude/skills/
 ```
 
 **Codex**
 
 ```bash
 mkdir -p ~/.codex/skills
-cp -R skills/{judge,review-levels} ~/.codex/skills/
+cp -R skills/review ~/.codex/skills/
 ```
 
 **Gemini CLI and other agents**

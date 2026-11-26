@@ -5,7 +5,7 @@ Small, practical examples to accompany Level Up AI episodes. Start with a tool a
 | Tool | Example | What it shows |
 | --- | --- | --- |
 | Claude Code | [Status line](claude-code/status-line/) | Model, directory, optional label and coloured context bar |
-| Any agent | [Review and judge skills](skills/) | Independent code review levels, risk zones and a separate triage judge |
+| Any agent | [Review skill (reviewer and judge)](skills/review/) | Independent code review levels, risk zones and a separate triage judge |
 | OpenAI Codex CLI | [Status line](codex/status-line/) | Built-in model and context indicators |
 
 Each topic directory contains its own instructions and copyable examples. Future episodes can add directories under the relevant tool without changing existing examples.

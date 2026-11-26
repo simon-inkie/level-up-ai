@@ -1,12 +1,3 @@
----
-name: judge
-description: >-
-  Independently triage review findings and decide what happens next. Use when
-  judging a review report, auditing a judgement, or applying a judgement to a
-  review loop or an automated workflow. Ask the owner to decide only for the
-  six items on the stop list.
----
-
 # Judge
 
 Block acceptance on defects that real users or normal operators can hit. Record other confirmed findings on a hardening list. The reviewer finds problems, the judge decides which findings block acceptance, and the stop list determines when to ask the owner.
@@ -97,7 +88,7 @@ The briefer or workflow applies the first matching rule using the Stage A judgem
 
 A zone S1 FIX that exhausts the available responses triggers stop item 3.
 
-If none of these rules matches and DESIGN rows remain, use the REDESIGN verdict from `review-levels` to reroute to design.
+If none of these rules matches and DESIGN rows remain, use the REDESIGN verdict from `levels.md` to reroute to design.
 
 ## 3. The six items that require an owner decision
 
@@ -153,7 +144,7 @@ judgement:
 
 ```text
 JUDGE <unit> at <40-character SHA>, level <STANDARD|DEEP>, zones <review_zones output>.
-You are independent of the builder, reviewer and briefer. Load the judge skill and do Stage A only.
+You are independent of the builder, reviewer and briefer. Load judge.md and do Stage A only.
 Inputs:
 - Review report <path>
 - Diff <base>..<sha> and repository at <sha>
